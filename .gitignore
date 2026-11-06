@@ -24,5 +24,6 @@ tools/
 *.caf
 /profiles/*
 !/profiles/meeting/
+!/profiles/rpg/
 /docs/PLAN.md
 /docs/REVISIT.md

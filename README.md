@@ -141,9 +141,14 @@ A profile is a folder in `profiles/` with three plain-English files:
 | `recap.md` | Instructions (not output) for the whole-session recap written at the end. |
 | `glossary.md` | Names and terms. The whole file goes to the summarizer, which fixes misheard names. With `--asr whisper` (the default) or `openai`, the names (bullets like `- Project Atlas: migration project`) are also given to the transcriber as spelling hints. Put the most-said names first: Whisper only reads the first ~700 characters of names. |
 
-The built-in `meeting` profile is the default. Keep personal names, client details, and
+The built-in `meeting` profile is the default. An optional `rpg` profile summarizes tabletop
+RPG sessions, with a glossary of fictional characters and setting terms. Select it with
+`new "example session" --profile rpg`, or choose it when creating a session in the window.
+
+Keep personal names, client details, and
 confidential terminology in a separate local profile, for example `profiles/private-team/`.
-Custom profile folders are ignored by Git by default. Copy `profiles/meeting/` to the new
+Custom profile folders other than the built-in `meeting` and `rpg` profiles are ignored by
+Git by default. Copy a built-in profile to the new
 folder and customize its glossary.
 
 ## Settings (.env or environment)

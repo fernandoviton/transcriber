@@ -10,5 +10,5 @@ shell commands (Get-Content, Select-String, cat, type), scripts, and sub-agents.
 If a task seems to need one of these folders, stop and ask the user. Use the test sessions
 (`*-test*`) for debugging instead.
 
-Never commit recordings, transcripts, session exports, local profiles, or `.env` files.
+Never commit recordings, transcripts, session exports, private custom profiles, or `.env` files.
 Use synthetic examples when updating documentation or testing the pipeline.
