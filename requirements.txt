@@ -1,0 +1,5 @@
+httpx
+numpy
+sounddevice
+onnx-asr[cpu,hub]  # local speech-to-text (Parakeet)
+hf_xet  # faster model downloads
